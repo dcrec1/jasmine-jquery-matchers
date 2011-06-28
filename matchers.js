@@ -24,6 +24,10 @@ beforeEach(function() {
       return this.actual.isDefaultPrevented();                    
     },
 
+    toBeEmpty: function() {
+      return this.actual.length == 0;         
+    },
+
     toBeHidden: function() {
       return this.actual.is(":hidden");             
     },
