@@ -1,5 +1,9 @@
 beforeEach(function() {
   this.addMatchers({
+    toBeA: function(selector) {
+      return this.actual.is(selector);
+    },
+
     toBeACalendar: function() {
       return this.actual.hasClass("hasDatepicker");             
     },
